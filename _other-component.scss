@@ -1,0 +1,7 @@
+@use "base";
+
+@include base.export("other-component") {
+  .other-component {
+    value: var(--property);
+  }
+}
