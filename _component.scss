@@ -1,5 +1,7 @@
 @use "base";
-@forward "sub-component";
+@use "sub-component";
+
+@include sub-component.styles;
 
 @include base.export("component") {
   .component {
