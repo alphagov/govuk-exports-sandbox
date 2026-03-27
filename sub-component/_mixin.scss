@@ -1,9 +1,9 @@
-@use "../base";
+@use "../base/mixin" as base;
 
 @mixin styles {
   @include base.export("sub-component") {
     @include base.styles;
-    
+
     .sub-component {
         value: var(--property);
     }
