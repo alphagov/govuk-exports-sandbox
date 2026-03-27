@@ -1,4 +1,5 @@
 @use "base";
+@forward "sub-component";
 
 @include base.export("other-component") {
   .other-component {
