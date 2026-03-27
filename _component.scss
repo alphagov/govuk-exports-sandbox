@@ -1,5 +1,5 @@
 @use "base";
-@use "sub-component";
+@use "sub-component/mixin" as sub-component;
 
 @include sub-component.styles;
 
