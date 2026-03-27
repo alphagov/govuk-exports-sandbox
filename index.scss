@@ -1,1 +1,5 @@
-// Code will go here
+@use "component";
+@use "other-component" with (
+    $other-component-setting: "configured"
+);
+@use "sub-component";

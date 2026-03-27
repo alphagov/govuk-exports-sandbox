@@ -1,0 +1,11 @@
+@use "sass:list";
+
+$exported: () !default;
+
+@mixin export($name) {
+    @debug "should we export", $name, "given we exported", $exported;
+    @if not list.index($exported, $name) {
+        @content;
+        $exported: list.append($exported, $name) !global;
+    }
+}
