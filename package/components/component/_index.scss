@@ -1,5 +1,3 @@
-@use "../../base/mixin" as base;
-
 @mixin styles {
     .component {
       value: var(--property);
