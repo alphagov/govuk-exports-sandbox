@@ -1,5 +1,8 @@
+$global-setting: "configured";
 $other-component-setting: "configured";
 
 @import "package/components/component";
 @import "package/components/other-component";
 @import "package/components/sub-component";
+
+@include useful-mixin;
