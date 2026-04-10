@@ -1,1 +1,16 @@
-@forward "mixin";
+@use "../../base/mixin" as base;
+@use "../sub-component" as sub-component;
+
+$other-component-setting: "default" !default;
+
+@mixin styles {
+  @include base.export("other-component") {
+    @include base.styles;
+    @include sub-component.styles;
+
+    .other-component {
+      setting: #{$other-component-setting};
+      value: var(--property);
+    }
+  }
+}
