@@ -1,8 +1,8 @@
-@use "index";
-@use "../../exports";
-
 // Make the Sass API available (a previous side-effect of importing this file)
 @forward "../../base";
+
+@use "index";
+@use "../../exports";
 
 // Include custom properties
 @import "../../properties";

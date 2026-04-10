@@ -1,8 +1,8 @@
-// We need to forward index first to allow the component to receive configuration
-@forward "index";
-
 // Make the Sass API available (a previous side-effect of importing this file)
 @forward "../../base";
+
+// We also need to forward index to allow the component to receive configuration
+@forward "index";
 
 @use "index";
 @use "../../exports";
