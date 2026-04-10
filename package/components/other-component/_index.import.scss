@@ -1,5 +1,15 @@
-@use "index";
+// We need to forward index first to allow the component to receive configuration
+@forward "index";
 
+@use "index";
+@use "../../exports";
+
+// Include custom properties
 @import "../../base";
 
-@include index.styles;
+// Include dependent components
+@import "../sub-component/";
+
+@include exports.export("other-component") {
+    @include index.styles;
+}
