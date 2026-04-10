@@ -1,4 +1,5 @@
 @use "package" with (
+    $global-setting: "foo",
     $components: (
         "component",
         // No longer included automatically when using the @use API, so we have to include it separately
