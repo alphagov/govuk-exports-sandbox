@@ -1,5 +1,17 @@
+@use "sass:meta";
+
 @use "component";
 @use "other-component" with (
     $other-component-setting: "configured"
 );
 @use "sub-component";
+
+$components: (
+    "component",
+    "other-component",
+    "sub-component"
+) !default;
+
+@each $component in $components {
+    @include meta.apply(meta.get-mixin('styles', $component));
+}
