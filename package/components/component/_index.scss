@@ -3,7 +3,6 @@
 
 @mixin styles {
   @include base.export("component") {
-    @include base.styles;
     @include sub-component.styles;
 
     .component {

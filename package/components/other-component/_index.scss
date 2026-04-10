@@ -5,7 +5,6 @@ $other-component-setting: "default" !default;
 
 @mixin styles {
   @include base.export("other-component") {
-    @include base.styles;
     @include sub-component.styles;
 
     .other-component {

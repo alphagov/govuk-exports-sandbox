@@ -1,11 +1,7 @@
-@use "exports";
-
 @debug "properties loaded";
 
 @mixin styles {
-    @include exports.export("properties") {
-        :root {
-            --property: value;
-        }
+    :root {
+        --property: value;
     }
 }
