@@ -1,7 +1,7 @@
 @use "../exports";
 
-@use "mixin";
+@use "properties";
 
 @include exports.export("base") {
-    @include mixin.styles;
+    @include properties.styles;
 }
