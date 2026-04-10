@@ -1,7 +1,10 @@
+@use "../../base";
+
 $other-component-setting: "default" !default;
 
 @mixin styles {
     .other-component {
+      global-setting: #{base.$global-setting};
       setting: #{$other-component-setting};
       value: var(--property);
     }

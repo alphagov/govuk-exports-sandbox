@@ -1,5 +1,8 @@
+@use "../../base";
+
 @mixin styles {
     .component {
+      global-setting: #{base.$global-setting};
       value: var(--property);
     }
 }
