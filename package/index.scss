@@ -1,2 +1,3 @@
-@forward "base";
-@forward "components";
+@forward "base" as govuk-*;
+@forward "properties" as govuk-*;
+@forward "components" as govuk-*;

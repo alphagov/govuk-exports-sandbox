@@ -1,7 +1,3 @@
-@use "properties";
-
 @forward "useful-mixin";
 
 $global-setting: 'default';
-
-@include properties.styles;

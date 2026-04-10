@@ -1,7 +1,7 @@
 @use "index";
 @use "../../exports";
 
-@import "../../base";
+@import "../../properties";
 
 @include exports.export("sub-component") {
     @include index.styles;

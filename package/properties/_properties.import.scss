@@ -1,0 +1,8 @@
+@use "../exports";
+
+// Include custom properties
+@use "properties";
+
+@include exports.export("properties") {
+    @include properties.styles;
+}
