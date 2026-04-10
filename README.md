@@ -8,3 +8,4 @@ A minimal reproduction of `govuk-exports` to understand how to make it work with
 2. Compile stylesheets with:
     - `npx sass index.scss` for including files with `@use`
     - `npx sass with-import.scss` for including files with `@import`
+    - `npx sass subset.scss` for including selective parts of the codebase with `@use`
