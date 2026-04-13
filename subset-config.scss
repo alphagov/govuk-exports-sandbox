@@ -1,0 +1,7 @@
+@use "package" with (
+    $global-setting: 'configured',
+    $components: (
+        'other-component'
+    ),
+    $other-component-setting: 'beans'
+);

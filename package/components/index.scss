@@ -2,6 +2,16 @@
 
 @forward "other-component";
 
-@use "component";
-@use "other-component";
-@use "sub-component";
+@use "component/mixin" as component;
+@use "other-component/mixin" as other-component;
+@use "sub-component/mixin" as sub-component;
+
+$components: (
+    "component",
+    "other-component",
+    "sub-component"
+) !default;
+
+@each $component in $components {
+    @include meta.apply(meta.get-mixin('styles', $component));
+}
