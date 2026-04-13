@@ -1,11 +1,7 @@
-@use "../../base";
+// Expose config from mixin
+@forward "mixin";
 
-$other-component-setting: "default" !default;
+@use "mixin";
+@use "../sub-component";
 
-@mixin styles {
-    .other-component {
-      global-setting: #{base.$global-setting};
-      setting: #{$other-component-setting};
-      value: var(--property);
-    }
-}
+@include mixin.styles;

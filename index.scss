@@ -1,1 +1,4 @@
-@use "package";
+@use "package" with (
+    $global-setting: 'configured',
+    $other-component-setting: 'beans'
+);

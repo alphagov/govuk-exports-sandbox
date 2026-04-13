@@ -1,12 +1,12 @@
 // Make the Sass API available (a previous side-effect of importing this file)
 @forward "../../base";
 
-@use "index";
+@use "mixin";
 @use "../../exports";
 
 // Include custom properties
 @import "../../properties";
 
 @include exports.export("sub-component") {
-    @include index.styles;
+    @include mixin.styles;
 }

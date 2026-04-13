@@ -2,9 +2,9 @@
 @forward "../../base";
 
 // We also need to forward index to allow the component to receive configuration
-@forward "index";
+@forward "mixin";
 
-@use "index";
+@use "mixin";
 @use "../../exports";
 
 // Include custom properties
@@ -14,5 +14,5 @@
 @import "../sub-component/";
 
 @include exports.export("other-component") {
-    @include index.styles;
+    @include mixin.styles;
 }
